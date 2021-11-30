@@ -15,6 +15,8 @@ public class Client extends Application {
         stage.setTitle("Client");
         stage.setScene(scene);
         stage.show();
+        Thread client = new Thread(new TCPClient());
+        client.start();
     }
 
     public static void main(String[] args) {
