@@ -16,10 +16,10 @@ Vytvorte klient-server aplikáciu na kopírovanie adresára. Požadované vlastn
 - Nie je potrebné programovať prehľadávač disku „na druhej strane“ na výber adresára ani výber cieľového umiestnenia adresára
 - Odporúčam nepoužívať vytváranie špeciálnych paketov s hlavičkami, ale posielať cez Socket.getOutputStream().write() po prípadných úvodných dohodách iba dáta. Uzatvorenie streamu sa dá odchytiť cez výnikmku IOException, keď sa zatvorí socket.
 - Program má byť schopný skopírovať bez problémov na lokálnej sieti, alebo v rámci localhostu aj 1GB stredne veľkých súborov pod 1 minútu
-- Požadované vlastnosti
+Požadované vlastnosti
   - projekt musí využívať na správu vlákien Executor – nevytvárate vlastné Thread-y
   - použite aspoň jeden synchronizér
   - odchyťte v úlohe udalosť prerušenia
   - počet dokopy vytvorených TCP spojení počas celej doby kopírovania musí byť rovný počtu TCP Soketov zadaných používateľom s prípadným bonusovým jedným TCP soketom/spojením na manažovanie kopírovania (ak máte potrebu ho použiť) – teda, počas kopírovania žiadne nové TCP spojenia nevznikajú
-- Zakázané vlastnosti
+Zakázané vlastnosti
   - použitie uspatia vlákna na určitý čas namiesto vhodného sychronizéra
