@@ -10,13 +10,11 @@ import java.io.IOException;
 public class Client extends Application {
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(Client.class.getResource("hello-view.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(Client.class.getResource("client.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 320, 240);
         stage.setTitle("Client");
         stage.setScene(scene);
         stage.show();
-        Thread client = new Thread(new TCPClient());
-        client.start();
     }
 
     public static void main(String[] args) {

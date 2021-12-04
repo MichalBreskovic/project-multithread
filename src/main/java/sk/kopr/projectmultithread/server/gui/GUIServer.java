@@ -1,9 +1,9 @@
-package sk.kopr.projectmultithread.client.gui;
+package sk.kopr.projectmultithread.server.gui;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 
-public class HelloController {
+public class GUIServer {
     @FXML
     private Label welcomeText;
 

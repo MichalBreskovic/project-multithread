@@ -62,8 +62,8 @@
                         <configuration>
 <!--                            <mainClass>sk.kopr.projectmultithread-->
 <!--                            </mainClass>-->
-                            <mainClass>sk.kopr.projectmultithread.client.HelloApplication/sk.kopr.projectmultithread.server.Server</mainClass>
-                            <mainClass>sk.kopr.projectmultithread.server.Server</mainClass>
+                            <mainClass>sk.kopr.projectmultithread.client.Client/sk.kopr.projectmultithread.server.Server</mainClass>
+<!--                            <mainClass>sk.kopr.projectmultithread.server.Server</mainClass>-->
                         </configuration>
                     </execution>
                 </executions>

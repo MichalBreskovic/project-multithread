@@ -5,8 +5,8 @@
 Vytvorte klient-server aplikáciu na kopírovanie adresára. Požadované vlastnosti:
 
 - Sťahovanie adresára (stromu adresárov a súborov) prebieha paralelne cez používateľom daný počet TCP soketov.
-- Kopírovanie prebieha iba zo servra na klient
-- Jeden súbor sa presúva vždy len cez jeden soket, po jeho prenesení posiela tento soket ďalší súbor, ak ešte je ďalší, čo treba posielať
+- Kopírovanie prebieha iba zo servera na klient
+- Jeden súbor sa presúva vždy len cez jeden socket, po jeho prenesení posiela tento soket ďalší súbor, ak ešte je ďalší, čo treba posielať
 - Toto sťahovanie je prerušiteľné tak, že sa vypne server (simulácia straty spojenia) alebo klient (simulácia toho, že používateľ musí nečakane vypnúť/reštartovať počítač). Po opätovnom nadviazaní spojenia medzi serverom a klientom, má klient možnosť pokračovať v dokopírovaní od momentu prerušenia (už stiahnuté časti súborov sa neťahajú znova) opäť paralelne cez daný počet TCP soketov.
 - Grafické používateľské rozhranie pre klienta vo frameworku JavaFX obsahujúce aspoň
   - progressbar znázorňujúci percento skopírovania počtu súborov
